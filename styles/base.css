@@ -67,6 +67,7 @@ main {
 .card ul {
     list-style-type: none;
     padding: 0;
+    color: #572727;
 }
 
 .card li {
@@ -74,7 +75,7 @@ main {
 }
 
 .card a {
-    color: #da7c7c;
+    color: #572727;
     text-decoration: none;
 }
 
