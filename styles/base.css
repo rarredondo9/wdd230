@@ -44,7 +44,8 @@ nav {
     display: inline-block;
     margin: 0 10px;
     text-decoration: none;
-    color: #34302e;
+    color: #f9f5f3;
+    font-weight: bold;
 }
 
 main {
@@ -85,9 +86,10 @@ main {
 
 footer {
     background-color: #da7c7c;
-    color: #34302e;
+    color: #f9f5f3;
     text-align: center;
     padding: 10px;
     bottom: 0;
     width: 100%;
+    font-weight: bold;
 }
