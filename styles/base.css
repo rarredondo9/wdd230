@@ -29,6 +29,8 @@ h1 {
 }
 
 nav {
+    display: flex;
+    flex-direction: column;
     background-color: #da7c7c;
     padding: 10px;
     text-align: center;
@@ -38,10 +40,11 @@ nav {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
 }
 
 .menu-item {
-    display: inline-block;
     margin: 0 10px;
     text-decoration: none;
     color: #f9f5f3;
