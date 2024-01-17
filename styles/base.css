@@ -66,6 +66,18 @@ main {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
+    text-align: center;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card p {
+    margin-bottom: 8px;
+    color: #572727;
 }
 
 .card ul {
