@@ -1,13 +1,12 @@
 @media only screen and (max-width: 767px) {
     main {
+        display: grid;
         grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 20px;
     }
 
-    header h1 {
-        font-size: 1.75em;
-    }
-
-    header h2 {
-        font-size: 1em;
+    .card {
+        margin-bottom: 20px;
     }
 }
