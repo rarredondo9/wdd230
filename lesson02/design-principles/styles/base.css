@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Playfair+Display:ital@1&display=swap');
+
+body {
+    font-family: 'Alice', serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #faf4f4;
+}
+
+header {
+    background-color: #f6e0e0;
+    color: #333;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    margin-bottom: 0.5em;
+}
+
+header h2 {
+    font-size: 1.2em;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #ece2e2;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card h3,
+.card li,
+.card p {
+    margin-bottom: 10px;
+}
+
+.card li {
+    list-style-type: none;
+}
+
+.card a {
+    color: #c67a88;
+    text-decoration: none;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #f6e0e0;
+    color: #333;
+    text-align: center;
+    padding: 10px 0;
+}
