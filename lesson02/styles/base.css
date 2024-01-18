@@ -40,12 +40,12 @@ main {
 }
 
 .card h3,
-.card li,
+.card ul,
 .card p {
     margin-bottom: 10px;
 }
 
-.card li {
+.card ul {
     list-style-type: none;
 }
 
