@@ -9,7 +9,7 @@ const menu = document.querySelector(".menu");
 const menuItems = document.querySelectorAll(".menu-item");
 
 menuButton.addEventListener("click", () => {
-    menuItems.forEach((item) => item.classList.toggle("open"));
+    menuItems.forEach((item) => item.classList.toggle("show"));
     menuButton.classList.toggle("close");
     menu.classList.toggle("show");
 });
