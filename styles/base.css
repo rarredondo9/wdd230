@@ -109,3 +109,65 @@ footer {
     width: 100%;
     font-weight: bold;
 }
+
+@media screen and (max-width: 768px) {
+    nav {
+        position: relative;
+    }
+
+    nav #menu-button {
+        display: block;
+        font-size: 2rem;
+        cursor: pointer;
+        margin-top: 0;
+    }
+
+    nav #menu-button::before {
+        content: "☰";
+    }
+
+    nav .menu {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background: #f7f7f7;
+        overflow: hidden;
+        transition: top 0.5 ease-in-out;
+    }
+
+    nav .menu.show {
+        top: 60px;
+    }
+
+    nav .menu li a {
+        display: block;
+        text-decoration: none;
+        text-align: center;
+        width: 100%;
+        padding: 1rem;
+        color: black;
+        position: relative;
+        transition: background 0.5s ease-in-out;
+    }
+
+    nav .menu li a:hover,
+    nav .menu li:first-child a {
+        background: #da7c7c;
+        color: #fff;
+    }
+
+    nav li a.menu-item {
+        display: none;
+    }
+
+    nav li a.open {
+        display: flex;
+    }
+
+    nav #menu-button.close::before {
+        content: "X";
+    }
+}
