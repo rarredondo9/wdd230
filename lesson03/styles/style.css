@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Ubuntu:ital,wght@1,300&display=swap');
+
+:root {
+    --color-1: #00487C;
+    --color-2: #4BB3FD;
+    --color-3: #3E6680;
+    --color-4: #0496FF;
+
+    --heading-font: "Ubuntu", sans-serif;
+    --paragraph-font: "Abel", sans-serif;
+
+    --headline-color-on-white: #000;
+    --headline-color-on-color: #fff;
+    --paragraph-color-on-white: #000;
+    --paragraph-color-on-color: #fff;
+    --paragraph-background-color: #00487c;
+}
+
+body {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 4em;
+    font-size: 16px;
+    text-align: center;
+}
+
+#header-font {
+    font-family: var(--heading-font);
+    margin-bottom: 0;
+}
+
+#body-font {
+    font-family: var(--paragraph-font);
+}
+
+h1 {
+    font-family: var(--heading-font);
+    color: var(--headline-color-on-color);
+    text-align: center;
+}
+
+h2,
+h3 {
+    margin-bottom: 5px;
+    background-color: var(--color-2);
+    font-family: var(--heading-font);
+    color: var(--headline-color-on-white);
+    text-align: center;
+}
+
+hr {
+    height: 3px;
+    margin: 20px 0;
+    background-color: #000;
+}
+
+header {
+    padding: 1.5rem;
+    text-align: center;
+    color: var(--paragraph-color-on-color);
+    background-color: var(--paragraph-background-color);
+}
+
+header>h1 header>h2 {
+    color: var(--headline-color-on-color);
+}
+
+p {
+    font-family: var(--paragraph-font);
+    color: var(--paragraph-color-on-white);
+}
+
+.color-schema {
+    width: 100%;
+    min-width: 350px;
+    text-align: center;
+}
+
+.colors th {
+    background-color: var(--color-2);
+}
+
+.colors td {
+    width: 50%;
+    height: 2em;
+}
+
+#color1 {
+    background-color: var(--color-1);
+    color: var(--paragraph-color-on-color);
+}
+
+#color2 {
+    background-color: var(--color-2);
+    color: var(--paragraph-color-on-color);
+}
+
+#color3 {
+    background-color: var(--color-3);
+    color: var(--paragraph-color-on-color);
+}
+
+#color4 {
+    background-color: var(--color-4);
+    color: var(--paragraph-color-on-color);
+}
+
+.color-use {
+    background-color: rgb(211, 211, 212);
+}
+
+ul {
+    text-align: center;
+    list-style-position: inside;
+    font-family: var(--paragraph-font);
+    margin-top: auto;
+}
+
+a {
+    font-family: var(--paragraph-font);
+    text-align: center;
+}
+
+img {
+    width: auto;
+    max-width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    display: block;
+
+}
+
+footer {
+    background-color: var(--color-3);
+    color: #fff;
+}
