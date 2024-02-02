@@ -14,7 +14,6 @@ footer,
 }
 
 header div h1,
-header div h3,
 .cards h2 {
     font-family: 'Ubuntu', sans-serif;
     color: #FFFFFF;
@@ -49,10 +48,6 @@ header div {
 
 header div h1 {
     font-size: 2.5em;
-}
-
-header div h3 {
-    font-size: 1.2em;
 }
 
 nav ul {
@@ -151,8 +146,7 @@ footer section {
         max-width: 80px;
     }
 
-    header div h1,
-    header div h3 {
+    header div h1 {
         text-align: left;
         font-size: 1.5em;
         margin: 0;
