@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Ubuntu:ital,wght@1,300&display=swap');
+
+body {
+    font-family: 'Abel', sans-serif;
+    color: #034660;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header,
+nav,
+footer,
+.cards {
+    background-color: #004D7C;
+}
+
+header div h1,
+header div h3,
+.cards h2 {
+    font-family: 'Ubuntu', sans-serif;
+    color: #FFFFFF;
+}
+
+a {
+    color: #046B99;
+}
+
+a:hover {
+    color: #034660;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+}
+
+header div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: auto;
+    margin-left: 38em;
+}
+
+.logo {
+    max-width: 100px;
+}
+
+header div h1 {
+    font-size: 2.5em;
+}
+
+header div h3 {
+    font-size: 1.2em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+    margin-left: auto;
+}
+
+nav ul li a {
+    color: aliceblue;
+}
+
+#menu-button {
+    display: none;
+}
+
+main .hero {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    width: 100%;
+    height: 400px;
+}
+
+main .hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+}
+
+main .hero a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px 30px;
+    background-color: #046B99;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0 0 10px #046B99;
+}
+
+main .hero a:hover {
+    background-color: #034660;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em;
+    padding: 1em;
+}
+
+.cards section {
+    background-color: #046B99;
+    padding: 1em;
+    color: white;
+    box-shadow: 0 0 5px #FFFFFF;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    background-color: #034660;
+    color: white;
+}
+
+footer section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1em;
+        text-align: left;
+    }
+
+    header div {
+        margin-left: 0;
+        align-items: flex-start;
+    }
+
+    .logo {
+        max-width: 80px;
+    }
+
+    header div h1,
+    header div h3 {
+        text-align: left;
+        font-size: 1.5em;
+        margin: 0;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 10px;
+        color: aliceblue;
+    }
+
+    #menu-button {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 2em;
+        cursor: pointer;
+        margin: 0;
+        padding: 10px;
+    }
+
+    #menu-button::before {
+        content: "≡";
+        font-size: 1.5em;
+    }
+
+    #menu-button.close::before {
+        content: "X";
+    }
+
+    main .cards {
+        grid-template-columns: 1fr;
+    }
+}
