@@ -39,7 +39,7 @@ header div {
     flex-direction: column;
     align-items: center;
     margin-right: auto;
-    margin-left: 22em;
+    margin-left: auto;
 }
 
 .logo {
