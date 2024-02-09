@@ -101,6 +101,25 @@ main .hero a:hover {
     background-color: #034660;
 }
 
+main.dark,
+main.dark a {
+    background-color: #022d3e;
+    color: rgb(173, 171, 171);
+}
+
+main.dark section {
+    border: #022d3e;
+    color: white;
+}
+
+main.dark .cards {
+    background-color: #022d3e;
+}
+
+main.dark .cards section {
+    background-color: #034660;
+}
+
 .cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
