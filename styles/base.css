@@ -67,6 +67,32 @@ main {
     text-align: center;
 }
 
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero {
+    position: relative;
+}
+
+.herolabel {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: #f9f5f3;
+    border: 1px solid #572727;
+    padding: 1rem;
+    opacity: 0.8;
+}
+
+.herolabel p {
+    margin: 0;
+    padding: 0.25rem;
+    font-weight: 800;
+    font-size: 1.1rem;
+}
+
 .card {
     background-color: #f9f5f3;
     border-radius: 8px;
