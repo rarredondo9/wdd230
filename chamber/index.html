@@ -40,8 +40,17 @@
 
     <main>
         <div class="hero">
-            <img src="images/hero.webp" alt="hero image of antigua Guatemala">
-            <a href="#">Join Now</a>
+            <picture>
+                <source srcset="images/small-wdd230-org.webp" media="(max-width: 400px)">
+                <source srcset="images/medium-wdd230-org.webp" media="(max-width: 960px)">
+                <img src="images/large-wdd230-org.webp" alt="Image of the Quetzaltenango Guatemala Temple"
+                    loading="lazy" width="960" height="420">
+            </picture>
+            <div class="overlay-text" id="small">Small</div>
+            <div class="overlay-text" id="medium">Medium</div>
+            <div class="overlay-text" id="large">Large</div>
+            <!--<img src="images/hero.webp" alt="hero image of antigua Guatemala">
+            <a href="#">Join Now</a>-->
         </div>
 
         <div class="cards">
@@ -62,7 +71,9 @@
             </section>
             <section class="weather">
                 <h2>Weather</h2>
-                <p>Current Weather:</p>
+                <p>Current Temperature: <span id="temperature">40</span>°F</span></p>
+                <p>Wind Speed: <span id="windSpeed">5</span> mph</span></p>
+                <p>Wind Chill: <span id="windChill">N/A</span></p>
             </section>
         </div>
     </main>
@@ -75,6 +86,7 @@
         </div>
     </footer>
     <script src="scripts/getdates.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 
 </html>

@@ -74,6 +74,17 @@ main .hero {
     height: 400px;
 }
 
+/* Remove overlay later*/
+.overlay-text {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #FFFFFF;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    display: none;
+}
+
 main .hero img {
     width: 100%;
     height: 100%;
@@ -205,5 +216,24 @@ footer div {
 
     main .cards {
         grid-template-columns: 1fr;
+    }
+}
+
+/*Remove the following later*/
+@media (max-width: 400px) {
+    #small {
+        display: block;
+    }
+}
+
+@media (min-width: 401px) and (max-width: 960px) {
+    #medium {
+        display: block;
+    }
+}
+
+@media (min-width: 961px) {
+    #large {
+        display: block;
     }
 }
