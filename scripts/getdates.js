@@ -15,3 +15,16 @@ document.addEventListener('DOMContentLoaded', function () {
         menuButton.classList.toggle('close');
     });
 });
+
+//page visits
+const visitDisplay = document.querySelector(".visits");
+
+let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
+
+if (numVisits !== 0) {
+    visitsDisplay.textContent = numVisits;
+} else {
+    visitDisplay.textContent = "This is your first visit.🥳 Welcome!";
+}
+
+numVisits++;
