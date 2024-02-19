@@ -101,7 +101,7 @@ main {
     text-align: center;
 }
 
-.info-container {
+section#information {
     display: flex;
     flex-direction: column;
     align-items: center;
