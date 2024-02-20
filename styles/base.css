@@ -107,6 +107,10 @@ section#information {
     align-items: center;
 }
 
+section#information p {
+    padding: 0;
+}
+
 .card p {
     margin-bottom: 8px;
     color: #572727;
