@@ -17,14 +17,15 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 //page visits
-const visitDisplay = document.querySelector(".visits");
+const displayVisits = document.querySelector(".visits");
 
-let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
+let numVisits = Number(window.localStorage.getItem("visits-ls"));
 
 if (numVisits !== 0) {
-    visitsDisplay.textContent = numVisits;
+    displayVisits.textContent = numVisits;
 } else {
-    visitDisplay.textContent = "This is your first visit.🥳 Welcome!";
+    displayVisits.textContent = "This is your first visit!";
 }
 
 numVisits++;
+localStorage.setItem("visits-ls", numVisits);
