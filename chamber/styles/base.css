@@ -266,6 +266,4 @@ section.attractions-imgs figure img:hover {
         grid-template-areas: "main" "sidebar";
         grid-template-columns: 1fr;
     }
-
-    /*discover*/
 }
