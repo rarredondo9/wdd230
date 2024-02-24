@@ -65,6 +65,7 @@ nav ul li a {
     display: none;
 }
 
+/*home page*/
 main .hero {
     position: relative;
     background-size: cover;
@@ -72,17 +73,6 @@ main .hero {
     text-align: center;
     width: 100%;
     height: 400px;
-}
-
-/* Remove overlay later*/
-.overlay-text {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    color: #FFFFFF;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 5px;
-    display: none;
 }
 
 main .hero img {
@@ -145,6 +135,8 @@ main.dark .cards section {
     box-shadow: 0 0 5px #FFFFFF;
 }
 
+/*home page*/
+
 footer {
     display: flex;
     justify-content: space-between;
@@ -158,6 +150,56 @@ footer div {
     flex-direction: column;
     gap: 0.5em;
 }
+
+/*discover page*/
+
+div.discover-title h1 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-bottom: solid 2px #022d3e;
+    background-color: #046B99;
+    color: aliceblue;
+}
+
+div.discover {
+    background-color: aliceblue;
+    display: grid;
+    grid-template-areas: "sidebar main";
+    grid-template-columns: 2fr 3fr;
+    grid-gap: 10px;
+}
+
+div.discover hr {
+    height: 2px;
+    background-color: #022d3e;
+    margin: 0;
+    width: 100%;
+}
+
+section.attractions {
+    grid-area: sidebar;
+    text-align: center;
+    margin: 3rem;
+    background-color: #ccedf9;
+}
+
+section.attractions-imgs {
+    grid-area: main;
+    text-align: center;
+}
+
+section.attractions-imgs figure {
+    height: auto;
+    border: solid 1px #022d3e;
+}
+
+section.attractions-imgs figure img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px #034660;
+}
+
+/*discover page*/
 
 @media (max-width: 768px) {
     header {
@@ -217,23 +259,13 @@ footer div {
     main .cards {
         grid-template-columns: 1fr;
     }
-}
 
-/*Remove the following later*/
-@media (max-width: 400px) {
-    #small {
-        display: block;
-    }
-}
 
-@media (min-width: 401px) and (max-width: 960px) {
-    #medium {
-        display: block;
+    /*discover*/
+    div.discover {
+        grid-template-areas: "main" "sidebar";
+        grid-template-columns: 1fr;
     }
-}
 
-@media (min-width: 961px) {
-    #large {
-        display: block;
-    }
+    /*discover*/
 }
