@@ -1,0 +1,42 @@
+table {
+    border-collapse: collapse;
+    margin: auto;
+    width: 500px;
+}
+
+caption {
+    text-align: center;
+    caption-side: bottom;
+}
+
+table th {
+    padding: 1.5rem;
+}
+
+table thead tr:first-child {
+    background-color: rgb(4, 7, 66);
+    color: white;
+}
+
+table thead tr:last-child {
+    background-color: rgb(40, 64, 126);
+    color: white;
+}
+
+table thead tr:last-child th:first-child {
+    background-color: rgb(4, 7, 66);
+}
+
+table tbody tr:nth-child(even) {
+    background-color: azure;
+}
+
+table tbody th {
+    border: 1px black;
+}
+
+table td {
+    text-align: center;
+    padding: 1rem;
+    border: 1px black;
+}
