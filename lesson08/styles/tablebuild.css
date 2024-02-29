@@ -2,6 +2,7 @@ table {
     border-collapse: collapse;
     margin: auto;
     width: 500px;
+    border-color: black;
 }
 
 caption {
@@ -16,11 +17,13 @@ table th {
 table thead tr:first-child {
     background-color: rgb(4, 7, 66);
     color: white;
+    font-size: larger;
 }
 
 table thead tr:last-child {
     background-color: rgb(40, 64, 126);
     color: white;
+    font-size: large;
 }
 
 table thead tr:last-child th:first-child {
@@ -28,11 +31,12 @@ table thead tr:last-child th:first-child {
 }
 
 table tbody tr:nth-child(even) {
-    background-color: azure;
+    background-color: rgb(162, 162, 162);
 }
 
 table tbody th {
     border: 1px black;
+    font-size: large;
 }
 
 table td {
