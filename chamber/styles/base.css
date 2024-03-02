@@ -201,6 +201,90 @@ section.attractions-imgs figure img:hover {
 
 /*discover page*/
 
+/*Join page*/
+.join-page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+}
+
+.join-page .joinForm,
+.join-page .membershipBenefits {
+    flex: 1 1 45%;
+    background-color: #e4f6fc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.joinForm legend {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+.joinForm label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.joinForm input[type="text"],
+.joinForm input[type="email"],
+.joinForm input[type="tel"] {
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.joinForm .submit-button {
+    display: inline-block;
+    background-color: #046B99;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: #046B99 0.3 ease;
+    margin-top: 15px;
+}
+
+.joinForm .submit-button:hover {
+    background-color: #022d3e;
+}
+
+.membershipBenefits h2 {
+    color: #022d3e;
+}
+
+.membershipBenefits .membership-level {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #FFFFFF;
+    border-left: 5px solid #022d3e;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.membershipBenefits p {
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.thank-you {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    text-align: center;
+    padding: 20px;
+}
+
+
 @media (max-width: 768px) {
     header {
         flex-direction: row;
@@ -265,5 +349,15 @@ section.attractions-imgs figure img:hover {
     div.discover {
         grid-template-areas: "main" "sidebar";
         grid-template-columns: 1fr;
+    }
+
+    /*join*/
+    .join-page {
+        flex-direction: column;
+    }
+
+    .join-page .joinForm,
+    .join-page .membershipBenefits {
+        flex-basis: 100%;
     }
 }
