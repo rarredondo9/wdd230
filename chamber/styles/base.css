@@ -241,6 +241,21 @@ section.attractions-imgs figure img:hover {
     border-radius: 5px;
 }
 
+textarea#businessDescription {
+    height: auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    resize: vertical;
+    outline: none;
+}
+
+textarea#businessDescription:focus {
+    border-color: #034660;
+    box-shadow: 0 0 0 2px rgba(0, 86, 179, 0.2);
+}
+
 .joinForm .submit-button {
     display: inline-block;
     background-color: #046B99;
@@ -249,7 +264,7 @@ section.attractions-imgs figure img:hover {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: #046B99 0.3 ease;
+    transition: background-color 0.3 ease;
     margin-top: 15px;
 }
 
