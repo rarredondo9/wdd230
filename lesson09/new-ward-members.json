@@ -1,0 +1,35 @@
+{
+    "wardInformation": {
+        "familyName": "Sagastume",
+        "moveInDate": "2022-02-10",
+        "numberOfPeople": "5",
+        "visitedByBishopric": true,
+        "familyMembers": [
+            {
+                "name": "Francisco Sagastume",
+                "gender": "Male",
+                "birthdate": "1988-12-23"
+            },
+            {
+                "name": "Rebeca Sagastume",
+                "gender": "Female",
+                "birthdate": "1994-07-09"
+            },
+            {
+                "name": "Camila Sagastume",
+                "gender": "Female",
+                "birthdate": "2017-02-25"
+            },
+            {
+                "name": "Tomas Sagastume",
+                "gender": "Male",
+                "birthdate": "2018-10-21"
+            },
+            {
+                "name": "Sebastian Sagastume",
+                "gender": "Male",
+                "birthdate": "2021-08-27"
+            }
+        ]
+    }
+}
