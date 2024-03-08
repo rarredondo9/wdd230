@@ -1,28 +1,31 @@
 const baseURL = "https://rarredondo9.github.io/wdd230/";
 const linksURL = "https://rarredondo9.github.io/wdd230/data/links.json";
 
-async function fetchLinksData() {
+async function getLinks() {
     const response = await fetch(linksURL);
     const data = await response.json();
     //console.log(data);
     displayLinks(data);
 }
 
+getLinks();
+
 function displayLinks(weeks) {
-    const container = document.querySelector(".card > ul");
+    const list = document.querySelector(".lessons");
+
+    weeks.lessons.forEach(week => {
+        const item = document.createElement("li");
+        let content = `${week.lesson}: `;
+
+        week.links.forEach((link, index) => {
+            content += `<a href="${link.url}">${link.title}</a>`;
+            if (index < week.links.length - 1) {
+                content += ' | ';
+            }
+        });
+
+        item.innerHTML = content;
+        list.appendChild(item);
+    });
 }
 
-weeks.forEach(week => {
-    week.links.forEach(link => {
-        const listItem = document.createElement("li");
-        const linkElement = document.createElement("a");
-        linkElement.href = link.url;
-        linkElement.textContent = `${week.week}: ${link.title}`;
-        linkElement.target = "_blank";
-
-        listItem.appendChild(linkElement);
-        container.appendChild(listItem);
-    })
-})
-
-getLinks();

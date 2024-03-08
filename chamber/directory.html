@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chamber of Commerce - Rebeca Arredondo</title>
-    <meta name="description" content="Rebeca Arredondo's WDD 230 Chamber of Commerce">
+    <title>Chamber of Commerce - Rebeca Arredondo - Directory</title>
+    <meta name="description" content="Rebeca Arredondo's WDD 230 Chamber of Commerce-Directory">
     <meta name="author" content="Rebeca Arredondo">
     <link rel="icon" href="images/favicon.ico">
 
-    <meta property="og:title" content="Chamber of Commerce - Rebeca Arredondo">
+    <meta property="og:title" content="Chamber of Commerce - Rebeca Arredondo-Directory">
     <meta property="og:url" content="https://rarredondo9.github.io/wdd230/chamber">
     <meta property="og:type" content="website">
     <meta property="og:image"
@@ -40,34 +40,14 @@
     </header>
 
     <main>
-        <div class="hero">
-            <img img src="images/hero.webp" alt="hero image of antigua Guatemala" loading="lazy" width="960"
-                height="420">
-            <a href="join.html">Join Now</a>
+        <h1 class="directoryHeader">Directory</h1>
+
+        <div class="menu">
+            <button id="grid">Grid Mode</button>
+            <button id="list">List Mode</button>
         </div>
 
-        <div class="cards">
-            <section class="business">
-                <h2>Spotlight Business</h2>
-                <h3>Paiz Santa Amelia</h3>
-                <p></p>
-            </section>
-            <section class="Events">
-                <h2>Events</h2>
-                <p>Tecuman Sports Festival Cuidad Cayala invites you to the best crossfit competition!</p>
-                <p>Join us March 25th at Plaza La Bandera</p>
-            </section>
-            <section class="news">
-                <h2>News</h2>
-                <p>Agronomist Fredy Archile is recognized with the Eco-Social Award for the rescue of the Monja Blanca.
-                </p>
-            </section>
-            <section class="weather">
-                <h2>Weather</h2>
-                <p>Current Temperature: <span id="temperature">40</span>°F</p>
-                <p>Wind Speed: <span id="windSpeed">5</span> mph</p>
-                <p>Wind Chill: <span id="windChill">N/A</span></p>
-            </section>
+        <div id="members" class="grid">
         </div>
     </main>
 
@@ -79,7 +59,7 @@
         </div>
     </footer>
     <script src="scripts/getdates.js"></script>
-    <script src="scripts/windchill.js"></script>
+    <script src="scripts/directory.js"></script>
 </body>
 
 </html>
