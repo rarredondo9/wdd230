@@ -12,15 +12,15 @@ function displayMembers(members) {
     members.forEach((member) => {
         const memberCards = document.querySelector("#members");
 
-        const name = document.createElement("h2");
-        name.innerHTML = member.name;
-
         const image = document.createElement("img");
         image.setAttribute("src", member.image);
         image.setAttribute("alt", `${member.name} image`);
         image.setAttribute("loading", "lazy");
         image.setAttribute("width", "300");
         image.setAttribute("height", "250");
+
+        const name = document.createElement("h2");
+        name.innerHTML = member.name;
 
         const address = document.createElement("p");
         address.innerHTML = member.address;
@@ -35,8 +35,8 @@ function displayMembers(members) {
         level.innerHTML = member.membershipLevel;
 
         const card = document.createElement("section");
-        card.appendChild(name);
         card.appendChild(image);
+        card.appendChild(name);
         card.appendChild(address);
         card.appendChild(phone);
         card.appendChild(url);

@@ -1,60 +1,60 @@
 {
     "members": [
         {
+            "image": "./images/members-images/watson.webp",
             "name": "Watson Books and Coffee",
             "url": "https://www.instagram.com/watsonbooks.coffee/",
             "address": "Blvd. Rafael Landivar 10-05 Zona 16 - C.C. Pase Cayala",
             "phone": "(502) 2364 0001",
-            "image": "./images/members-images/watson.webp",
-            "membershipLevel": ""
+            "membershipLevel": "Bronze"
         },
         {
-            "name": "San Martin Varieta",
             "image": "./images/members-images/sanmartin.webp",
+            "name": "San Martin Varieta",
             "address": "Blvd. Jacarandas, 22 Calle 3-05 Zona 16, Lote 3 C.C. Plaza Varieta, Local 12",
             "phone": "(502) 2420 9926",
             "url": "https://sanmartinbakery.com/",
-            "membershipLevel": ""
+            "membershipLevel": "Gold"
         },
         {
-            "name": "Manos Morenas",
             "image": "./images/members-images/manosmorenas.webp",
+            "name": "Manos Morenas",
             "address": "Boulevar Acatan, Las Fuentes",
             "phone": "(502) 4129 3518",
             "url": "https://www.instagram.com/manosmorenasgt/",
-            "membershipLevel": ""
+            "membershipLevel": "Non-profit"
         },
         {
-            "name": "Bite",
             "image": "./images/members-images/bite.webp",
+            "name": "Bite",
             "address": "Boulevar Rafale Landivar, 10-05 Paseo Cayala",
             "phone": "(502) 2369 0772",
             "url": "https://www.bite.gt/",
-            "membershipLevel": ""
+            "membershipLevel": "Silver"
         },
         {
-            "name": "Choco Museo",
             "image": "./images/members-images/choco.webp",
+            "name": "Choco Museo",
             "address": "Blvd. Rafael Landivar 10-05 Paseo Cayla",
             "phone": "(502) 2493 8179",
             "url": "https://www.chocomuseo.com/guatemala/",
-            "membershipLevel": ""
+            "membershipLevel": "Non-profit"
         },
         {
-            "name": "Le Petit Paris",
             "image": "./images/members-images/petitparis.webp",
+            "name": "Le Petit Paris",
             "address": "Local D1-104B, Boulevar Landicar, Paseo Cayala",
             "phone": "(502) 2369 4438",
             "url": "https://www.instagram.com/lepetit.parisgt/?hl=en",
-            "membershipLevel": ""
+            "membershipLevel": "Silver"
         },
         {
-            "name": "Cemaco Cayala",
             "image": "./images/members-images/cemaco.webp",
+            "name": "Cemaco Cayala",
             "address": "Boulevar Austriaco, 16-25 Cardales de Cayala",
             "phone": "(502) 2499 9999",
             "url": "https://www.cemaco.com/",
-            "membershipLevel": ""
+            "membershipLevel": "Gold"
         }
     ]
 }
