@@ -380,7 +380,6 @@ div.list img {
 
 div.list h2 {
     margin: 0 10px;
-    white-space: collapse;
     overflow: hidden;
     text-overflow: ellipsis;
     text-align: center;
