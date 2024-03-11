@@ -21,6 +21,10 @@
 </head>
 
 <body>
+    <div id="banner" class="banner">
+        **Join us for our meet and greet on Wednesday at 7:00 p.m.!**
+        <button onclick="closeBanner()" aria-label="Close banner" class="close-button">❌</button>
+    </div>
     <header>
         <a href="index.html"><img class="logo" src="images/logo.webp" alt="Bandera Alta Chamber of Commerce"></a>
         <div>
@@ -64,9 +68,26 @@
             </section>
             <section class="weather">
                 <h2>Weather</h2>
-                <p>Current Temperature: <span id="temperature">40</span>°F</p>
-                <p>Wind Speed: <span id="windSpeed">5</span> mph</p>
-                <p>Wind Chill: <span id="windChill">N/A</span></p>
+                <p>Current Temperature: <br>
+                    <img id="weather-icon" src="data:," alt="weather icon">
+                    <span id="temperature"></span>
+                    <span id="weather-description"></span>
+                </p>
+
+                <section class="forecast">
+                    <h3>3-Day Forecast</h3>
+                    <ol id="forecast-high">
+                        <h4>Highs</h4>
+                    </ol>
+                    <ol id="forecast-low">
+                        <h4>Lows</h4>
+                    </ol>
+                </section>
+
+                <section class="wind-chill">
+                    <p>Wind Speed: <span id="windSpeed">5</span> mph</p>
+                    <p>Wind Chill: <span id="windChill">N/A</span></p>
+                </section>
             </section>
         </div>
     </main>
@@ -80,6 +101,8 @@
     </footer>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/windchill.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/banner.js"></script>
 </body>
 
 </html>
