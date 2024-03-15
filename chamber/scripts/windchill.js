@@ -9,9 +9,13 @@ function calculateWindChill(temperature, windSpeed) {
 function displayWindChill() {
     const temperature = parseFloat(document.getElementById("temperature").textContent);
     const windSpeed = parseFloat(document.getElementById("windSpeed").textContent);
-    const windChillValue = calculateWindChill(temperature, windSpeed);
+    let windChillValue = calculateWindChill(temperature, windSpeed);
 
-    document.getElementById("windChill").textContent = Number.isNaN(windChillValue) ? "N/A" : windChillValue.toFixed(2) + "°F";
+    if (typeof windChillValue === "number") {
+        document.getElementById("windChill").textContent = windChillValue.toFixed(2) + "°F";
+    } else {
+        document.getElementById("windChill").textContent = windChillValue;
+    }
 }
 
 document.addEventListener("DOMContentLoaded", displayWindChill);
