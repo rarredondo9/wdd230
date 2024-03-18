@@ -481,6 +481,7 @@ div.list a {
         text-align: left;
         font-size: 1.5em;
         margin: 0;
+        padding: 5px;
     }
 
     nav ul {
