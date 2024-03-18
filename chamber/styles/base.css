@@ -488,10 +488,43 @@ div.list a {
 
 
     /*discover*/
-    div.discover {
-        grid-template-areas: "main" "sidebar";
-        grid-template-columns: 1fr;
+
+
+    .discover {
+        display: block;
     }
+
+    .attractions,
+    .attractions-imgs {
+        margin: 0;
+        padding: 1em;
+        width: auto;
+        display: block;
+    }
+
+    .attractions {
+        text-align: justify;
+    }
+
+    .attractions-imgs figure {
+        margin: 0;
+        width: auto;
+        display: block;
+    }
+
+    .attractions-imgs img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 1em;
+    }
+
+    figure {
+        margin: 0 auto;
+        width: 100%;
+        display: block;
+    }
+
+
 
     /*join*/
     .join-page {
