@@ -425,6 +425,39 @@ div.list a {
     color: #333;
 }
 
+/*Contact us*/
+.contact-us {
+    max-width: 800px;
+    margin: 3em auto;
+    padding: 2em;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact-us h1,
+.contact-us h2 {
+    color: #004D7C;
+    margin-bottom: 0.5em;
+}
+
+.contact-us p {
+    font-size: 1em;
+    color: #034660;
+    margin-bottom: 1em;
+    line-height: 1.6;
+}
+
+.contact-us a {
+    color: #046B99;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-us a:hover {
+    color: #034660;
+}
 
 
 @media (max-width: 768px) {
@@ -523,8 +556,6 @@ div.list a {
         width: 100%;
         display: block;
     }
-
-
 
     /*join*/
     .join-page {
