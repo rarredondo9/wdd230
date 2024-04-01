@@ -1,0 +1,10 @@
+@media (max-width: 600px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}

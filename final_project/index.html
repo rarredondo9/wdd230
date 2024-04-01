@@ -14,11 +14,22 @@
     <meta property="og:type" content="website">
     <meta property="og:image"
         content="https://www.traveltomtom.net/images/nieuwe_indeling/artikels/mexico/scooter_rental_cozumel/scooter_rental_cozumel-13.jpg">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/small.css">
+
 </head>
 
 <body>
+    <div id="banner" class="banner">
+        **BOOK YOUR SCOOTER NOW! Explore the island on your terms, with the freedom and fun of a motor scooter.**
+        <button onclick="closeBanner()" aria-label="Close banner" class="close-button">❌</button>
+    </div>
     <header>
-        <a href="index.html"><img class="logo" src="images/logo.webp" alt="Scoots logo"></a>
+        <a><img class="logo" src="images/logo.webp" alt="Scoots logo" width="100px" height="100px"
+                href="index.html"></a>
         <nav>
             <button id="menu-button"></button>
             <ul>
@@ -28,33 +39,11 @@
                 <li><a class="menu-items" href="contactus.html">Contact Us</a></li>
             </ul>
         </nav>
-        <div>
-            <h1>Scoots</h1>
-        </div>
     </header>
 
-    <main>
+    <main class="home-page">
         <div>
-            <h3>Motor Scooter Rental</h3>
-            <p>Scoots is a premier motor scooter rental company nestled in the heart of Cozumel,
-                an idyllic island off the coast of Mexico in the Western Caribbean Sea. As an
-                owner-operated business, Scoots prides itself on serving a diverse clientele, including locals,
-                walk-in tourists, motor scooter aficionados, and cruise-based touring groups.
-                With two strategic locations—one near the bustling Playa del Carmen-Cozumel Ferry
-                dock in El Centro and the other close to the Terminal Puerta Maya, catering to cruise
-                line passengers—Scoots offers convenient access to top-quality motor scooters, jeeps, and
-                side-by-side ATVs for exploring Cozumel's enchanting landscapes. Our mission extends beyond
-                simple rentals; we aim to embody the island's spirit of adventure and freedom, inviting
-                customers to explore Cozumel's lesser-known coasts and inlets far from the typical tourist
-                trails. Our website serves as a comprehensive portal for savvy travelers planning their
-                island escapades, providing essential information on our services, rental requirements,
-                and the booking process, all while capturing the carefree and exhilarating essence of Cozumel.
-                At Scoots, we're not just about getting you a ride; we're about crafting unforgettable
-                experiences.</p>
-        </div>
-        <div id="banner" class="banner">
-            **BOOK YOUR SCOOTER NOW! Explore the island on your terms, with the freedom and fun of a motor scooter.**
-            <button onclick="closeBanner()" aria-label="Close banner" class="close-button">❌</button>
+            <h1>Scoots</h1>
         </div>
         <div class="hero-video">
             <video width="960" height="420" autoplay muted loop>
@@ -78,7 +67,29 @@
                 <div id="tomorrow-forecast"></div>
             </section>
         </section>
-
+        <section class="about-us">
+            <div>
+                <h2>About Us</h2>
+                <p>Scoots is a premier motor scooter rental company nestled in the heart of Cozumel,
+                    an idyllic island off the coast of Mexico in the Western Caribbean Sea. As an
+                    owner-operated business, Scoots prides itself on serving a diverse clientele, including locals,
+                    walk-in tourists, motor scooter aficionados, and cruise-based touring groups.
+                <p>
+                    With two strategic locations—one near the bustling Playa del Carmen-Cozumel Ferry
+                    dock in El Centro and the other close to the Terminal Puerta Maya, catering to cruise
+                    line passengers—Scoots offers convenient access to top-quality motor scooters, jeeps, and
+                    side-by-side ATVs for exploring Cozumel's enchanting landscapes.
+                </p>
+                <p>Our mission extends beyond
+                    simple rentals; we aim to embody the island's spirit of adventure and freedom, inviting
+                    customers to explore Cozumel's lesser-known coasts and inlets far from the typical tourist
+                    trails. Our website serves as a comprehensive portal for savvy travelers planning their
+                    island escapades, providing essential information on our services, rental requirements,
+                    and the booking process, all while capturing the carefree and exhilarating essence of Cozumel.
+                    At Scoots, we're not just about getting you a ride; we're about crafting unforgettable
+                    experiences.</p>
+            </div>
+        </section>
         <div class="cards">
             <section class="honda-metro">
                 <h2>Honda Metropolitan</h2>
@@ -122,25 +133,26 @@
                 <p>- 2 door</p>
                 <p>- Manuel</p>
                 <p>- Open air</p>
-                <p>- 4 peron</p>
+                <p>- 4 person</p>
                 <a href="reservations.html" class="book-now-button">Book Now!</a>
             </section>
         </div>
     </main>
 
     <footer>
-        <div>
-        </div>
-        <p>&copy; <span id="year"></span> Rebeca Arredondo Scoots Project</p>
-        <p class="highlight">Last modified: <span id="lastModified"></span></p>
-        <div class="social-media">
-            <img src="images/facebook.webp" href="https://www.facebook.com/">
-            <img src="images/instagram.webp" href="https://www.instagram.com/">
-            <img src="images/twitter.webp" href="https://twitter.com/">
-        </div>
+        <div class="footer-info">
+            <p>&copy; <span id="year"></span> Rebeca Arredondo Scoots Project</p>
+            <p class="highlight">Last modified: <span id="lastModified"></span></p>
+            <div class="social-media">
+                <img src="images/facebook.webp" href="https://www.facebook.com/">
+                <img src="images/instagram.webp" href="https://www.instagram.com/">
+                <img src="images/twitter.webp" href="https://twitter.com/">
+            </div>
     </footer>
+
     <script src="scripts/weather.js"></script>
     <script src="scripts/getdates.js"></script>
+    <script src="scripts/banner.js"></script>
 </body>
 
 </html>
