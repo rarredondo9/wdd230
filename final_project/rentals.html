@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rentasl - Scoots - Scooter Rental Company in Cozumel</title>
+    <meta name="description" content="Rebeca Arredondo's WDD 230 - Final Project - Scoots - Rentals">
+    <meta name="author" content="Rebeca Arredondo">
+    <link rel="icon" href="images/favicon.ico">
+
+    <meta property="og:title" content="Scoots - Rentals - Rebeca Arredondo">
+    <meta property="og:url" content="https://rarredondo9.github.io/wdd230/chamber">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://www.traveltomtom.net/images/nieuwe_indeling/artikels/mexico/scooter_rental_cozumel/scooter_rental_cozumel-13.jpg">
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img class="logo" src="images/logo.webp" alt="Scoots logo"></a>
+        <nav>
+            <button id="menu-button"></button>
+            <ul>
+                <li class="active"><a class="menu-items" href="#">Home</a></li>
+                <li><a class="menu-items" href="rentals.html">Rentals</a></li>
+                <li><a class="menu-items" href="reservations.html">Reservations</a></li>
+                <li><a class="menu-items" href="contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="rentals">
+            <h1>Rentals</h1>
+        </div>
+        <div class="rental-hero=img">
+            <img src="images/rentals-img.webp" alt="scooters image" loading="lazy" width="960" height="420">
+            <a href="reservations.html">BOOK NOW!</a>
+        </div>
+        <div class="rental-cards">
+            <section class="honda-metro-card">
+                <img src="images/metro-rentals.webp">
+                <h2>Honda Metropolitan</h2>
+            </section>
+            <section class="honda-dio-card">
+                <img src="images/dio-rentals.webp">
+                <h2>Honda Dio</h2>
+            </section>
+            <section class="honda-pcx150-card">
+                <img src="images/pcx150-rentals.webp">
+                <h2>Honda PCX150</h2>
+            </section>
+            <section class="honda-pioneer-card">
+                <img src="images/pioneer-rentals.webp">
+                <h2>Honda Pioneer 1000</h2>
+            </section>
+            <section class="wrangler-4-card">
+                <img src="images/jeep-4-rentals.webp">
+                <h2>Jeep Wrangler</h2>
+            </section>
+            <section class="wrangler-2-card">
+                <img src="images/jeep-2-rentals.webp">
+                <h2>Jeep Wrangler</h2>
+            </section>
+        </div>
+        <table id="rental-pricing">
+            <thead>
+                <tr>
+                    <th>Rental Type</th>
+                    <th>Max Persons</th>
+                    <th>Half Day (Reservation)</th>
+                    <th>Full Day (Reservation)</th>
+                    <th>Half Day (Walk-In)</th>
+                    <th>Full Day (Walk-In)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Rental pricing -->
+            </tbody>
+        </table>
+</body>
+
+</html>
+</main>
+
+<footer>
+    <div>
+    </div>
+    <p>&copy; <span id="year"></span> Rebeca Arredondo Scoots Project</p>
+    <p class="highlight">Last modified: <span id="lastModified"></span></p>
+    <div class="social-media">
+        <img src="images/facebook.webp" href="https://www.facebook.com/">
+        <img src="images/instagram.webp" href="https://www.instagram.com/">
+        <img src="images/twitter.webp" href="https://twitter.com/">
+    </div>
+</footer>
+<script src="scripts/rental-prices.js"></script>
+<script src="scripts/getdates.js"></script>
+</body>
+
+</html>

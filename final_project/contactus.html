@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Scoots - Scooter Rental Company in Cozumel</title>
+    <meta name="description" content="Rebeca Arredondo's WDD 230 - Final Project - Scoots - Contact Us">
+    <meta name="author" content="Rebeca Arredondo">
+    <link rel="icon" href="images/favicon.ico">
+
+    <meta property="og:title" content="Scoots - Contact Us - Rebeca Arredondo">
+    <meta property="og:url" content="https://rarredondo9.github.io/wdd230/chamber">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://www.traveltomtom.net/images/nieuwe_indeling/artikels/mexico/scooter_rental_cozumel/scooter_rental_cozumel-13.jpg">
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img class="logo" src="images/logo.webp" alt="Scoots logo"></a>
+        <nav>
+            <button id="menu-button"></button>
+            <ul>
+                <li class="active"><a class="menu-items" href="#">Home</a></li>
+                <li><a class="menu-items" href="rentals.html">Rentals</a></li>
+                <li><a class="menu-items" href="reservations.html">Reservations</a></li>
+                <li><a class="menu-items" href="contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="contactus">
+            <h1>Contact Us</h1>
+        </div>
+        <section class="locations">
+            <h2>Location near Ultramar Ferry Playa del Carmen</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7468.382062901305!2d-87.08439856767654!3d20.621068850456343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e4339714b21af%3A0x7263228749e5ad85!2sUltramar%20Ferry%20Playa%20del%20Carmen!5e0!3m2!1sen!2spt!4v1711996510651!5m2!1sen!2spt"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+            <h2>Location near Terminal Puerta Maya</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3737.723285391396!2d-86.97600862658534!3d20.476555506519173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e57491a71c81d%3A0x6933058e58e0ee3d!2sPuerta%20Maya%20Cruise%20Ship%20Maritime%20Terminal!5e0!3m2!1sen!2spt!4v1711996608596!5m2!1sen!2spt"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+        <section class="contactus-form">
+            <form action="thankyou.html">
+                <fieldset>
+                    <legend>Contact Form</legend>
+                    <label for="name">Name*<input type="text" id="name" name="name" required></label>
+                    <label for="email">Email*<input type="email" id="email" name="email" required></label>
+                    <label for="comment">Comment<textarea id="comment" name="comment" required></textarea></label>
+                    <input type="submit" value="Submit">
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+        </div>
+        <p>&copy; <span id="year"></span> Rebeca Arredondo Scoots Project</p>
+        <p class="highlight">Last modified: <span id="lastModified"></span></p>
+        <div class="social-media">
+            <img src="images/facebook.webp" href="https://www.facebook.com/">
+            <img src="images/instagram.webp" href="https://www.instagram.com/">
+            <img src="images/twitter.webp" href="https://twitter.com/">
+        </div>
+    </footer>
+    <script src="scripts/rental-prices.js"></script>
+    <script src="scripts/getdates.js"></script>
+</body>
+
+</html>

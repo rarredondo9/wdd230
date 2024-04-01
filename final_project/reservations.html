@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservations - Scoots - Scooter Rental Company in Cozumel</title>
+    <meta name="description" content="Rebeca Arredondo's WDD 230 - Final Project - Scoots - Reservations">
+    <meta name="author" content="Rebeca Arredondo">
+    <link rel="icon" href="images/favicon.ico">
+
+    <meta property="og:title" content="Scoots - Reservations - Rebeca Arredondo">
+    <meta property="og:url" content="https://rarredondo9.github.io/wdd230/chamber">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://www.traveltomtom.net/images/nieuwe_indeling/artikels/mexico/scooter_rental_cozumel/scooter_rental_cozumel-13.jpg">
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img class="logo" src="images/logo.webp" alt="Scoots logo"></a>
+        <nav>
+            <button id="menu-button"></button>
+            <ul>
+                <li class="active"><a class="menu-items" href="#">Home</a></li>
+                <li><a class="menu-items" href="rentals.html">Rentals</a></li>
+                <li><a class="menu-items" href="reservations.html">Reservations</a></li>
+                <li><a class="menu-items" href="contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="reservations">
+            <h1>Reservations</h1>
+        </div>
+        <section class="reservation-form">
+            <h2>Book Your Rental</h2>
+            <form method="post" action="record.html">
+                <h2>Reservations Form</h2>
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="name">Full Name*
+                        <input type="text" id="name" name="name" required>
+                    </label>
+                    <label for="phone">Phone Number*
+                        <input type="tel" id="phone" name="phone" required>
+                    </label>
+                    <label for="email">Email Address*
+                        <input type="email" id="email" name="email" required>
+                    </label>
+                    <label for="state-country">Home State/Country*
+                        <input type="text" id="state-country" name="state_country" required>
+                    </label>
+                    <label for="cruise-line">Cruise Line (if applicable)
+                        <input type="text" id="cruise-line" name="cruise_line">
+                    </label>
+                    <label for="comments">Special Accommodations/Comments
+                        <textarea id="comments" name="comments"></textarea>
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Rental Details</legend>
+                    <label for="date">Rental Date*
+                        <input type="date" id="date" name="date" required>
+                    </label>
+                    <label for="period">Rental Period*
+                        <select id="period" name="period" required>
+                            <option value="">--Please choose an option--</option>
+                            <option value="half-day">Half Day</option>
+                            <option value="full-day">Full Day</option>
+                            <option value="multiple-days">Multiple Days</option>
+                        </select>
+                    </label>
+                    <label for="rental-type">Rental Type*
+                        <input type="text" id="rental-type" name="rental_type" required>
+                    </label>
+                    <label for="number">Number of Rentals*
+                        <input type="number" id="number" name="number" min="1" required>
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Agreement Information</legend>
+                    <li>A $50 security deposit is required to confirm reservations.</li>
+                    <li>A valid driver's license is required in hand at the time of rental.</li>
+                    <li>No one under the age of 12 years of age is allowed to ride on the scooters.</li>
+                    <li>Fuel charge is not included.</li>
+                    <li>Unlimited mileage.</li>
+                    <li>Liability insurance is included.</li>
+                    <li>Damage insurance is available for purchase.</li>
+                    <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+                    <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or Venmo.</li>
+                    <li>Rentals may be returned to either physical location.</li>
+                </fieldset>
+
+                <input type="submit" value="Submit Reservation">
+            </form>
+
+        </section>
+    </main>
+
+    <footer>
+        <div>
+        </div>
+        <p>&copy; <span id="year"></span> Rebeca Arredondo Scoots Project</p>
+        <p class="highlight">Last modified: <span id="lastModified"></span></p>
+        <div class="social-media">
+            <img src="images/facebook.webp" href="https://www.facebook.com/">
+            <img src="images/instagram.webp" href="https://www.instagram.com/">
+            <img src="images/twitter.webp" href="https://twitter.com/">
+        </div>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+</body>
+
+</html>
