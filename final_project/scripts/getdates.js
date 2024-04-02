@@ -6,12 +6,17 @@ document.getElementById("lastModified").innerHTML = lastModified;
 
 document.addEventListener('DOMContentLoaded', function () {
     const menuButton = document.getElementById('menu-button');
-    const menuItems = document.querySelectorAll('.menu-item');
+    const navItems = document.querySelector('nav ul');
+
+    menuButton.textContent = '☰';
 
     menuButton.addEventListener('click', function () {
-        menuItems.forEach(item => {
-            item.classList.toggle('open');
-        });
-        menuButton.classList.toggle('close');
+        if (navItems.style.display === 'block') {
+            navItems.style.display = 'none';
+            menuButton.textContent = '☰';
+        } else {
+            navItems.style.display = 'block';
+            menuButton.textContent = '✕';
+        }
     });
 });
