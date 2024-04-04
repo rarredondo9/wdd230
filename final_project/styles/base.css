@@ -59,7 +59,7 @@ nav ul li a.active {
     color: black;
 }
 
-.menu-button {
+#menu-button {
     display: none;
 }
 
