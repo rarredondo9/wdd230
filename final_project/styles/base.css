@@ -13,7 +13,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0 10%;
-    height: 200px;
+    height: 150px;
 }
 
 /*Home page*/
@@ -21,11 +21,13 @@ header {
     background-color: #ffc107;
     padding: 20px;
     text-align: center;
+    height: 5px;
 }
 
 .logo {
     width: 100px;
     height: auto;
+    margin-bottom: 50px;
     background-color: #69A7C0;
 }
 
@@ -41,6 +43,7 @@ nav ul {
 nav ul li {
     font-size: large;
     margin-left: 20px;
+    margin-bottom: 100px;
 }
 
 nav ul li a {
@@ -70,13 +73,12 @@ main h1 {
     top: 300px;
     left: 100px;
     color: #294B58;
-    font-size: 3em;
     margin: 0;
     z-index: 2;
     background-color: rgba(255, 255, 255, 0.516);
-    padding: 10px;
+    padding: 5px;
     border-radius: 5px;
-    font-size: 200px;
+    font-size: 150px;
 }
 
 .home-page h2,
@@ -108,7 +110,7 @@ p {
     padding: 20px;
     border-radius: 10px;
     z-index: 2;
-    max-width: 200px
+    max-width: 300px
 }
 
 .temp-max-message {
