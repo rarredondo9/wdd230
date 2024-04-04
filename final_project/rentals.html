@@ -14,6 +14,11 @@
     <meta property="og:type" content="website">
     <meta property="og:image"
         content="https://www.traveltomtom.net/images/nieuwe_indeling/artikels/mexico/scooter_rental_cozumel/scooter_rental_cozumel-13.jpg">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/small.css">
 </head>
 
 <body>
@@ -34,10 +39,26 @@
         <div class="rentals">
             <h1>Rentals</h1>
         </div>
-        <div class="rental-hero=img">
+        <div class="rental-hero-img">
             <img src="images/rentals-img.webp" alt="scooters image" loading="lazy" width="960" height="420">
             <a href="reservations.html">BOOK NOW!</a>
         </div>
+
+        <table id="rental-pricing">
+            <thead>
+                <tr>
+                    <th>Rental Type</th>
+                    <th>Max Persons</th>
+                    <th>Half Day (Reservation)</th>
+                    <th>Full Day (Reservation)</th>
+                    <th>Half Day (Walk-In)</th>
+                    <th>Full Day (Walk-In)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Rental pricing -->
+            </tbody>
+        </table>
         <div class="rental-cards">
             <section class="honda-metro-card">
                 <img src="images/metro-rentals.webp">
@@ -64,39 +85,21 @@
                 <h2>Jeep Wrangler</h2>
             </section>
         </div>
-        <table id="rental-pricing">
-            <thead>
-                <tr>
-                    <th>Rental Type</th>
-                    <th>Max Persons</th>
-                    <th>Half Day (Reservation)</th>
-                    <th>Full Day (Reservation)</th>
-                    <th>Half Day (Walk-In)</th>
-                    <th>Full Day (Walk-In)</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- Rental pricing -->
-            </tbody>
-        </table>
-</body>
+    </main>
 
-</html>
-</main>
-
-<footer>
-    <div>
-    </div>
-    <p>&copy; <span id="year"></span> Rebeca Arredondo Scoots Project</p>
-    <p class="highlight">Last modified: <span id="lastModified"></span></p>
-    <div class="social-media">
-        <img src="images/facebook.webp" href="https://www.facebook.com/">
-        <img src="images/instagram.webp" href="https://www.instagram.com/">
-        <img src="images/twitter.webp" href="https://twitter.com/">
-    </div>
-</footer>
-<script src="scripts/rental-prices.js"></script>
-<script src="scripts/getdates.js"></script>
+    <footer>
+        <div>
+        </div>
+        <p>&copy; <span id="year"></span> Rebeca Arredondo Scoots Project</p>
+        <p class="highlight">Last modified: <span id="lastModified"></span></p>
+        <div class="social-media">
+            <img src="images/facebook.webp" href="https://www.facebook.com/">
+            <img src="images/instagram.webp" href="https://www.instagram.com/">
+            <img src="images/twitter.webp" href="https://twitter.com/">
+        </div>
+    </footer>
+    <script src="scripts/rental-prices.js"></script>
+    <script src="scripts/getdates.js"></script>
 </body>
 
 </html>

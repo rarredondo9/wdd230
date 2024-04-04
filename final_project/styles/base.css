@@ -105,7 +105,7 @@ p {
     position: absolute;
     top: 300px;
     right: 15px;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.692);
     color: #294B58;
     padding: 20px;
     border-radius: 10px;
@@ -131,6 +131,11 @@ p {
     color: inherit;
     float: right;
     cursor: pointer;
+}
+
+#temperature-info,
+.forecast {
+    text-align: center;
 }
 
 .close-button {
@@ -205,6 +210,104 @@ p {
     color: #fff;
     text-decoration: none;
     cursor: pointer;
+}
+
+
+/*rentals*/
+.rental-hero-img a {
+    display: inline-block;
+    background-color: #ffc107;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    width: 200px;
+    height: 40px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.rental-hero-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.rental-hero-img a:hover {
+    background-color: #FF8066;
+}
+
+.rentals h1 {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.rentals a {
+    font-size: 0.8em;
+    display: block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.rental-hero-img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.rental-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.rental-cards section {
+    flex-basis: 20%;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.rental-cards img {
+    max-width: 80%;
+    height: auto;
+    opacity: 0.9;
+}
+
+#rental-pricing {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+#rental-pricing th,
+#rental-pricing td {
+    text-align: center;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+#rental-pricing th {
+    background-color: #f2f2f2;
+}
+
+#rental-pricing tr:nth-child(even) {
+    background-color: #f9f9f9;
 }
 
 footer {
