@@ -64,7 +64,7 @@ nav ul li a.active {
 
 .home-page {
     background: linear-gradient(to bottom, #f5f5f5, #b9d6e3);
-    margin-top: -50px;
+    margin-top: 0;
 }
 
 .home-page h1 {
@@ -542,33 +542,53 @@ footer {
 }
 
 @media (max-width: 768px) {
-
-    header,
-    .home-page,
-    .cards section,
-    .rental-cards section {
+    header {
         flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 20px 0;
     }
 
     nav ul {
         flex-direction: column;
+        align-items: center;
     }
 
     nav ul li {
         margin: 10px 0;
     }
 
+    .cards,
+    .rental-cards {
+        flex-direction: column;
+    }
+
     .cards section,
     .rental-cards section {
         flex-basis: 100%;
+        margin: 10px 0;
+    }
+
+    .home-page h1,
+    .rentals h1 {
+        font-size: 100px;
+        position: relative;
+        top: initial;
+        left: initial;
+        text-align: center;
+    }
+
+    .hero-video video,
+    .rental-hero-img img {
+        height: auto;
     }
 
     .about-us,
-    .contactus-form,
     .reservation-form,
+    .contactus-form,
     .record-main,
     .thankyou-main {
         width: 90%;
-        margin: 20px auto;
+        margin: 10px auto;
     }
 }
