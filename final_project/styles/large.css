@@ -1,15 +1,7 @@
-@media (min-width: 901px) {
-    .cards {
-        grid-template-columns: repeat(3, 1fr);
-    }
+@media (min-width: 1025px) {
 
-    header,
-    footer {
-        text-align: left;
-        padding: 1rem 10%;
-    }
-
-    nav ul {
-        text-align: right;
+    .cards section,
+    .rental-cards section {
+        flex-basis: calc(33.333% - 40px);
     }
 }
