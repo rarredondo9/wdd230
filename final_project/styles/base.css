@@ -543,19 +543,45 @@ footer {
 
 @media (max-width: 768px) {
     header {
-        flex-direction: column;
-        text-align: center;
-        height: auto;
-        padding: 20px 0;
+        position: relative;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    #menu-button {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        height: 30px;
+        width: 30px;
+        border: none;
+        margin: 10px 0;
     }
 
     nav ul {
+        display: none;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
+        width: 100%;
     }
 
     nav ul li {
         margin: 10px 0;
+    }
+
+    .banner {
+        font-size: 14px;
+        height: 20px;
+    }
+
+    .weather {
+        position: static;
+        width: 100%;
+        padding: 10px;
+        text-align: center;
     }
 
     .cards,
@@ -565,8 +591,14 @@ footer {
 
     .cards section,
     .rental-cards section {
-        flex-basis: 100%;
-        margin: 10px 0;
+        flex-basis: auto;
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    .cards img {
+        width: 300px;
+        height: 300px;
     }
 
     .home-page h1,
@@ -590,5 +622,56 @@ footer {
     .thankyou-main {
         width: 90%;
         margin: 10px auto;
+    }
+
+    #rental-pricing {
+        width: 100%;
+        font-size: 0.9em;
+        table-layout: fixed;
+        margin-top: 0;
+        overflow-x: auto;
+    }
+
+    #rental-pricing th,
+    #rental-pricing td {
+        padding: 8px;
+        font-size: 0.8em;
+    }
+
+    #rental-pricing {
+        transform: scale(1);
+        transform-origin: top left;
+        margin-top: -20px;
+        overflow-x: auto;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .footer-info {
+        flex-direction: column;
+        align-items: center;
+        margin: 10px 0;
+        width: 100%;
+    }
+
+    .footer-info p,
+    .footer-info span .social-media img {
+        font-size: 0.8em;
+        text-align: center;
+    }
+
+    .social-media img {
+        width: 20px;
+        height: 20px;
+        margin: 0 5px;
+    }
+
+    .social-media a {
+        display: inline-block;
+        margin: 0 5px;
     }
 }
