@@ -18,7 +18,6 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/large.css">
-    <link rel="stylesheet" href="styles/small.css">
 
 </head>
 
@@ -28,16 +27,16 @@
         <button onclick="closeBanner()" aria-label="Close banner" class="close-button">❌</button>
     </div>
     <header>
-        <a><img class="logo" src="images/logo.webp" alt="Scoots logo" width="100px" height="100px"
-                href="index.html"></a>
-        <nav>
-            <button id="menu-button"></button>
-            <ul>
-                <li class="active"><a class="menu-items" href="index.html">Home</a></li>
-                <li><a class="menu-items" href="rentals.html">Rentals</a></li>
-                <li><a class="menu-items" href="reservations.html">Reservations</a></li>
-                <li><a class="menu-items" href="contactus.html">Contact Us</a></li>
-            </ul>
+        <a href="index.html">
+            <img class="logo" src="images/logo.webp" alt="Scoots logo" width="100" height="100">
+        </a>
+        <button id="menu-button"></button>
+        <ul>
+            <li class="active"><a class="menu-items" href="index.html">Home</a></li>
+            <li><a class="menu-items" href="rentals.html">Rentals</a></li>
+            <li><a class="menu-items" href="reservations.html">Reservations</a></li>
+            <li><a class="menu-items" href="contactus.html">Contact Us</a></li>
+        </ul>
         </nav>
     </header>
 
@@ -170,9 +169,15 @@
             <p>&copy; <span id="year"></span> Rebeca Arredondo - Scoots Project</p>
             <p class="highlight">Last modified: <span id="lastModified"></span></p>
             <div class="social-media">
-                <img src="images/facebook.webp" href="https://www.facebook.com/">
-                <img src="images/instagram.webp" href="https://www.instagram.com/">
-                <img src="images/twitter.webp" href="https://twitter.com/">
+                <a href="https://www.facebook.com/">
+                    <img src="images/facebook.webp" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/">
+                    <img src="images/instagram.webp" alt="Instagram">
+                </a>
+                <a href="https://twitter.com/">
+                    <img src="images/twitter.webp" alt="Twitter">
+                </a>
             </div>
     </footer>
 
