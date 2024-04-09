@@ -54,18 +54,20 @@
         <section class="weather">
             <h2>Weather</h2>
             <section id="tempMaxMessage" class="temp-max-message">
-                <span id="tempMaxText">High Temp: --°F</span>
+                <span id="tempMaxText">
+                    <h4>High Temp: --°F</h4>
+                </span>
                 <button onclick="closeTempMaxMessage()">X</button>
             </section>
             <section id="temperature-info">
-                <p>Current Temperature: <br>
-                    <img id="weather-icon" src="data:," alt="weather icon">
-                    <span id="temperature"></span>
-                    <span id="weather-description"></span>
+                <h4>Current Temperature: </h4><br>
+                <img id="weather-icon" src="data:," alt="weather icon">
+                <span id="temperature"></span>
+                <span id="weather-description"></span>
                 </p>
             </section>
             <section class="forecast">
-                <p>Tomorrow's Forecast at 15:00</p>
+                <h5>Tomorrow's Forecast at 15:00</h5>
                 <div id="tomorrow-forecast"></div>
             </section>
         </section>
@@ -180,6 +182,7 @@
                     <img src="images/twitter.webp" alt="Twitter">
                 </a>
             </div>
+        </div>
     </footer>
 
     <script src="scripts/weather.js"></script>
