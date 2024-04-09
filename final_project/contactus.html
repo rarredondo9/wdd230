@@ -43,9 +43,12 @@
                     <legend>
                         <h2>Contact Us</h2>
                     </legend>
-                    <label for="name">Name*<input type="text" id="name" name="name" required></label>
-                    <label for="email">Email*<input type="email" id="email" name="email" required></label>
-                    <label for="comment">Comment<textarea id="comment" name="comment" required></textarea></label>
+                    <label for="name">Name*<input type="text" id="name" name="name" required
+                            autocomplete="name"></label>
+                    <label for="email">Email*<input type="email" id="email" name="email" required
+                            autocomplete="email"></label>
+                    <label for="comment">Comment<textarea id="comment" name="comment" required
+                            autocomplete="off"></textarea></label>
                     <input type="submit" value="Submit">
                 </fieldset>
             </form>
@@ -80,7 +83,6 @@
             </div>
         </div>
     </footer>
-    <script src="scripts/rental-prices.js"></script>
     <script src="scripts/getdates.js"></script>
 </body>
 
